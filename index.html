@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono|Source+Code+Pro|Work+Sans" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header>Crystal Collector</header><br><br>
+    
+	<div class="instructions">
+		<h1><u>INSTRUCTIONS</u>:</h1><br>
+		<p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click it. The values of each crystal will change each time the game restarts.</p>
+	</div><br><br>
+<p>	<h1>Number To Get: <span id= "randomNumber"></span></h1><br>
+		<h1>Wins: <span id= "numberWins"></span></h1><br>
+		<h1>Losses: <span id= "numberLosses"></span></h1><br><br></p>
+	
+	<div class="gems">
+		<img src="assets/images/crystal_green.png" class=gemImage id="one" alt="Green Gem">
+		<img src="assets/images/crystal_purple.jpg" class=gemImage id="two" alt="Purple Gem">
+		<img src="assets/images/crystal_pink.png" class=gemImage id= "three" alt="Pink Gem">
+		<img src="assets/images/crystal_blue.png" class=gemImage id= "four" alt="Blue Gem">
+	</div><Br><Br>
+
+		<h1>Your total score is: <span id="finalTotal"></span></h1>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
